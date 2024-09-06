@@ -1,0 +1,468 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light Gray */
+    color: #333333; /* Dark Gray */
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS code */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #003366; /* Deep Blue */
+    padding: 10px;
+}
+
+.navbar .logo,
+.anchor,
+.navbar .search-container,
+.navbar .login-button {
+    margin-left: auto;
+ /* Apply margin to all navbar elements */
+}
+.navbar .logo {
+    color: #FFD700; /* Soft Gold */
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 60px;
+    margin-left: -15px;
+}
+
+.btn{
+    color: #4169E1;
+    background-color: #FFD700;
+    width: 110px;
+    height: 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 23px #FFD700;
+}
+
+.btn a{
+    padding-left: 30px;
+    padding-top:13px ;
+    font-weight: 600;
+    font-size: medium;
+    color: #4169E1;
+    text-decoration: none;
+}
+
+#about{
+    height: 918px;
+    width: 100%;
+    background-color: var(--second-bgcolor);
+    color: var(--text-color);
+    display: flex;
+}
+
+.anchor {
+    color: #FFD700; /* Soft Gold */
+    text-decoration: none;
+    padding: 14px 10px; /* Decreased padding for equal spacing */
+    margin-right: 20px;
+    margin-left: 10px; /* Add margin between each link */
+}
+
+
+.about-link {
+    margin-left: 20px; /* Adjust this value as needed */
+}
+
+ .navbar_hover {
+    margin-left: 0px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 0;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 19px;
+    margin-right: 15px;
+  }
+ .navbar_hover:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar_hover:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    background: #fff;
+  }
+  
+  .navbar_hover:before {
+    left: 0;
+  }
+  .navbar_hover:after {
+    right: 0;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .navbar_hover:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .navbar_hover:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+ 
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #003366;
+    padding: 10px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo h2 {
+    color: #FFD700;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+
+
+
+/* CSS code */
+.login-button {
+    color: #FFD700; /* Soft Gold */
+    text-decoration: none;
+    padding: 14px 20px;
+    margin-left: 40px; /* Push the login button to the right */
+}
+
+.login-button:hover {
+    background-color: #4169E1; /* Royal Blue */
+    color: white;
+}
+
+
+.quote-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.quote-image img {
+    width: 100%;
+    height: auto;
+}
+
+.quote-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.popular-books {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.popular-books h2 {
+    margin-top: 0;
+}
+
+.book-list {
+    display: flex;
+}
+
+.book {
+    margin-right: 20px;
+}
+
+.book img {
+    width: 150px; /* Adjust the width of the book cover */
+    height: 200px; /* Adjust the height of the book cover */
+    background-color: #000; /* Black cover */
+}
+
+.big{
+    font-size: 1.3rem;
+}
+
+.book h3 {
+    text-align: center;
+}
+
+.popular-books {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background: whitesmoke;
+    background-size: contain;
+    background-position: center;
+    margin: 20px;
+    border-radius: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    
+}
+
+
+
+.popular-books h2 {
+    margin-top: 0;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with minimum column width of 200px */
+    grid-gap: 250px; /* Gap between grid items */
+    justify-content: space-between; /* Distribute items evenly across the row */
+}
+
+
+.book {
+    text-align: center;
+}
+
+.cover {
+    width: 150px; /* Width of the book cover */
+    height: 200px; /* Height of the book cover */
+    background-color: #f0f0f0; /* Light gray background for the cover */
+    border: 1px solid #ccc; /* Border around the cover */
+    border-radius: 5px; /* Rounded corners for the cover */
+    margin: 0 auto 10px; /* Margin to separate cover from title */
+}
+
+h3 {
+    margin: 0; /* Remove default margin for the title */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #003366;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #FFD700;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.book-grid h3{
+    color: #4169E1;
+    text-decoration: none;
+}
+
+.button{
+    display: flex;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.logo h2{
+    color: #FFD700;
+}
+
+.responsivenav{
+    color: #FFD700;
+    background-color: #003366;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    display: none;
+}
+
+.responsivenav {
+    display: none;
+    transition: display 0.5s ; /* Add transition effect */
+  }
+  
+  .responsivenav.show {
+    display: grid;
+    transition: display 0.5s; /* Add transition effect */
+  }
+
+.responsive_a{
+    text-decoration: none;
+    color: #FFD700;
+    font-size: larger;
+    font-weight:350 ;
+    padding-left: 42%;
+    text-shadow: 0px 0px 13px #FFD700;
+}
+
+@media only screen and (max-width:900px){
+    body{
+        width: 100%;
+    }
+
+    .search-container input[type="text"] {
+        height: 18px;
+        width: 90px;
+        margin-left: 0;
+    }
+    
+    .search-container button {
+        padding: 6px 10px;
+        margin: 0px;
+        width: 55px;
+        height: 30px;
+        background-color: #FFD700; /* Soft Gold */
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    .quote-text{
+        font-size: 20px;
+    }
+
+    .book-grid{
+        grid-gap: 200px;
+    }
+
+    .checkbtn{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .navbar .logo{
+        margin-right: 5px;
+        margin-left: 8px;
+    }
+
+    .logo h2{
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 10px;
+        color: #FFD700;
+    }
+    
+    .anchor{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    #check:checked .responsivenav {
+        display: grid;
+    }
+
+}
